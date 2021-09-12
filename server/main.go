@@ -30,7 +30,7 @@ func main() {
 	r.PathPrefix("/").HandlerFunc(fileHandler(indexPath))
 
 	server := http.Server{
-		Addr:         ":8000",
+		Addr:         ":8004",
 		Handler:      r,
 		ReadTimeout:  5 * time.Second,
 		WriteTimeout: 5 * time.Second,
